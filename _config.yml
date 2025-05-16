@@ -16,7 +16,7 @@ repository: "data-Serena.github.io" # 用于生成编辑链接等
 # --- Author Settings --- #
 author:
   name: "王颖"
-  avatar: "/assets/images/your-avatar.jpg" # 替换为您头像图片的路径 (需上传到仓库)
+  avatar: "/assets/images/poster.jpg" # 替换为您头像图片的路径 (需上传到仓库)
   bio: "数据分析，热衷于从数据中发现价值。"
   location: "杭州, 上海"
   links:

@@ -1,0 +1,109 @@
+# _config.yml
+#theme: minimal-mistakes-jekyll
+# _config.yml
+remote_theme: "mmistakes/minimal-mistakes@4.27.1" # 请将 @4.24.0 替换为最新的稳定版本号
+
+# _config.yml
+
+# --- Site Settings --- #
+
+title: "数据分析作品集" # 例如：张三的数据分析作品集
+name: "王颖" # 例如：张三
+description: "数据分析项目作品。"
+locale: zh-CN # 或者 en-US, en-GB 等，根据您的主要语言设置
+repository: "data-Serena.github.io" # 用于生成编辑链接等
+
+# --- Author Settings --- #
+author:
+  name: "王颖"
+  avatar: "/assets/images/your-avatar.jpg" # 替换为您头像图片的路径 (需上传到仓库)
+  bio: "数据分析，热衷于从数据中发现价值。"
+  location: "杭州, 上海"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:wying0027@163.com"
+    #- label: "LinkedIn"
+      #icon: "fab fa-fw fa-linkedin"
+     # url: "https://linkedin.com/in/yourprofile"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/data-Serena"
+    # 您可以添加更多社交链接 ，图标来自 Font Awesome
+
+# --- Navigation --- #
+# 主导航链接 (显示在页面顶部)
+main:
+  - title: "首页"
+    url: / # 或者 /index.html
+  - title: "项目案例"
+    url: /projects/ # 您需要创建对应的 projects.md 或 /projects/index.md
+  - title: "关于我"
+    url: /about/    # 您需要创建对应的 about.md
+  - title: "博客文章" # 可选
+    url: /blog/     # 您需要创建对应的 blog.md 或 /blog/index.md
+
+# --- Footer --- #
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/data-Serena"
+    #- label: "LinkedIn"
+     # icon: "fab fa-fw fa-linkedin"
+      #url: "https://linkedin.com/in/yourprofile"
+
+# --- Defaults --- #
+# 为不同类型的内容设置默认布局
+defaults:
+  # _posts 文件夹下的所有文件 (博客文章 )
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # _pages 文件夹下的所有文件 (独立页面，如关于我、项目列表等)
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+# --- Minimal Mistakes Theme Settings (部分示例) --- #
+# 更多主题特定设置请参考官方文档
+minimal_mistakes_skin: "default" # 可选皮肤: air, aqua, contrast, dark, dirt, neon, mint, sunrise, etc.
+search: true # 启用站内搜索
+
+# --- Build settings --- #
+markdown: kramdown
+remote_theme: "mmistakes/minimal-mistakes@4.24.0" # 如果使用 remote_theme
+# theme: minimal-mistakes-jekyll # 如果使用 theme gem
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+  # - jekyll-gist # 如果您想嵌入 Gist
+  # - jekyll-include-cache # 推荐用于提升构建速度
+
+# --- Pagination (for blog posts if you have many) --- #
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+# --- Exclude from processing --- #
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+

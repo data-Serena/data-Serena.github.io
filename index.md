@@ -1,7 +1,6 @@
 ---
 layout: default
 title: 主页
-css: /assets/css/style.css
 ---
 
 # 欢迎来到我的数据分析作品集

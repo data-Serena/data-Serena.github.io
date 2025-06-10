@@ -1,14 +1,58 @@
-body {
-  background-color: #eaf4fc;  /* 淡蓝背景 */
-  color: #2c3e50;             /* 深蓝灰色字体 */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
+/* 通用样式重置 */
+* {
   margin: 0;
-  padding: 20px;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* 页面整体背景与字体 */
+body {
+  font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+  background-color: #f7f9fb;
+  color: #333;
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+/* 页面容器 */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* 顶部导航 */
+nav {
+  background-color: #eaf3f9;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #2a7f9d;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* 标题样式 */
+h1, h2, h3 {
+  color: #2a7f9d;
+  margin-bottom: 1rem;
+}
+
+/* 链接样式 */
 a {
-  color: #3498db;             /* 链接蓝色 */
+  color: #2a7f9d;
   text-decoration: none;
 }
 
@@ -16,36 +60,25 @@ a:hover {
   text-decoration: underline;
 }
 
-header, footer {
+/* 项目卡片 */
+.project-card {
+  border: 1px solid #dbe8ee;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+}
+
+/* 页脚 */
+footer {
   text-align: center;
-  padding: 10px 0;
-  color: #7f8c8d;
-  font-size: 0.9em;
-}
-
-.container {
-  max-width: 900px;
-  margin: auto;
-  background: white;
-  padding: 30px 40px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  border-radius: 8px;
-}
-
-h1, h2, h3 {
-  color: #34495e;
-}
-
-button, .btn {
-  background-color: #5dade2;
-  border: none;
-  color: white;
-  padding: 10px 18px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover, .btn:hover {
-  background-color: #2e86c1;
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-top: 4rem;
 }

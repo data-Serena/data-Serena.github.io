@@ -1,35 +1,28 @@
 ---
 layout: default
-title: 主页
+title: 数据分析作品集
 ---
 
-# 欢迎来到我的数据分析作品集
-
-这里展示了我部分精选的数据分析项目，展示我的技能与经验。
-
----
-
-## 导航
-
-- [个人简介](about.md)
-- [联系我](contact.md)
-- [项目1：数据分析作品集搭建](projects/project1.md)
-- [项目2：电商优惠券效果分析](projects/project2.md)
-
----
+<h1>欢迎来到我的数据分析作品集</h1>
+<p>这是一个展示我过往项目和分析能力的平台，涵盖业务洞察、数据可视化等方面。</p>
 
 ## 项目展示
 
-### 项目1：数据分析作品集搭建
-- 简介：基于 Jekyll 和 GitHub Pages 搭建个人数据分析作品集，支持自动构建和页面展示。
-- [查看详情](projects/project1.md)
+<div class="card">
+  <h2>电商优惠券效果分析</h2>
+  <p>分析优惠券对用户行为的影响，评估领取率、使用率与促销 ROI 等关键指标。</p>
+  <a href="projects/project2.md" class="button">查看详情</a>
+</div>
 
----
+<div class="card">
+  <h2>司机完单提升分析</h2>
+  <p>从订单数据出发，结合司机行为，提出运营策略以提升司机接单率与完单数。</p>
+  <a href="projects/project1.md" class="button">查看详情</a>
+</div>
 
-### 项目2：电商优惠券效果分析
-- 简介：通过销售数据分析优惠券发放对用户购买行为和销售额的影响。
-- [查看详情](projects/project2.md)
+## 导航链接
 
----
-
-感谢访问！欢迎通过[联系我](contact.md)页面与我沟通交流。
+<ul>
+  <li><a href="about.md">关于我</a></li>
+  <li><a href="contact.md">联系我</a></li>
+</ul>

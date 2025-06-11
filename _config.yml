@@ -1,11 +1,24 @@
-title: 的数据分析作品集
-description: 专注业务洞察，驱动增长策略的数据分析师作品集
-theme: null  # 关闭默认 Cayman 主题，启用自定义布局
+title: 数据分析作品集
+email: wying0027@163.com
+description: >
+  这是我的数据分析作品集，包含司机订单分析、司机留存率分析和零售行业仪表盘项目。
+
+baseurl: "" # 若部署到github pages子目录就填写子目录，否则留空
+# url: "https://yourdomain.com"
+
+theme: jekyll-theme-cayman
+
+navbar_links:
+  - title: 首页
+    url: /
+  - title: 司机订单分析
+    url: /projects/driver_order_analysis/
+  - title: 司机留存分析
+    url: /projects/driver_retention_analysis/
+  - title: 零售仪表盘
+    url: /projects/retail-dashboard/
+
+plugins:
+  - jekyll-feed
+
 markdown: kramdown
-permalink: pretty
-defaults:
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: default

@@ -17,6 +17,8 @@ navbar_links:
     url: /projects/driver_retention_analysis/
   - title: 零售仪表盘
     url: /projects/retail-dashboard/
+  - title: 关于我
+    url: /about/
 
 plugins:
   - jekyll-feed

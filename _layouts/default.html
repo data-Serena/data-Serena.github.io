@@ -1,32 +1,42 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <title>{{ page.title }} - {{ site.title }}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="{{ "/assets/css/custom.css" | relative_url }}">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ page.title | default: site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+  <!-- 你可以添加更多meta或favicon等 -->
 </head>
-
 <body>
-  <header>
-    <h1>{{ site.title }}</h1>
-    <p>{{ site.description }}</p>
-  </header>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="{{ '/' | relative_url }}" class="nav-logo">{{ site.title }}</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+        <span class="hamburger"></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="{{ '/' | relative_url }}" class="nav-link">首页</a></li>
+        <li><a href="{{ '/projects/driver_order_analysis/' | relative_url }}" class="nav-link">司机订单分析</a></li>
+        <li><a href="{{ '/projects/driver_retention_analysis/' | relative_url }}" class="nav-link">司机留存分析</a></li>
+        <li><a href="{{ '/projects/retail-dashboard/' | relative_url }}" class="nav-link">零售仪表盘</a></li>
+      </ul>
+    </div>
+  </nav>
 
-  <div class="container">
-    <nav>
-      <a href="{{ "/" | relative_url }}">🏠 主页</a>
-      <a href="{{ "/projects/driver_order_analysis.html" | relative_url }}">🚘 完单分析</a>
-      <a href="{{ "/projects/driver_retention_analysis.html" | relative_url }}">📊 留存分析</a>
-      <a href="{{ "/about.html" | relative_url }}">🙋 关于我</a>
-      <a href="{{ "/contact.html" | relative_url }}">📬 联系我</a>
-    </nav>
-
+  <main>
     {{ content }}
+  </main>
 
-    <footer>
-      &copy; {{ site.title }} {{ site.time | date: "%Y" }}
-    </footer>
-  </div>
+  <script>
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    navToggle.addEventListener('click', () => {
+      const expanded = navToggle.getAttribute('aria-expanded') === 'true' || false;
+      navToggle.setAttribute('aria-expanded', !expanded);
+      navMenu.classList.toggle('nav-menu_visible');
+      navToggle.classList.toggle('nav-toggle_active');
+    });
+  </script>
 </body>
 </html>

@@ -9,15 +9,15 @@ title: 数据分析作品集
 ## 项目展示
 
 <div class="card">
-  <h2>电商优惠券效果分析</h2>
-  <p>分析优惠券对用户行为的影响，评估领取率、使用率与促销 ROI 等关键指标。</p>
-  <a href="projects/project2.md" class="button">查看详情</a>
+  <h2>网约车平台完单量提升分析</h2>
+  <p>通过多维指标分析、因果推断和可视化方法，系统分析影响完单量的关键因素，提出提升方案。</p>
+  <a href="projects/driver_order_analysis.md" class="button">查看详情</a>
 </div>
 
 <div class="card">
-  <h2>司机完单提升分析</h2>
-  <p>从订单数据出发，结合司机行为，提出运营策略以提升司机接单率与完单数。</p>
-  <a href="projects/project1.md" class="button">查看详情</a>
+  <h2>网约车平台司机留存提升</h2>
+  <p>通过数据分析手段，识别影响司机流失的关键因素，并提出提升司机留存率的策略建议。</p>
+  <a href="projects/driver_retention_analysis.md" class="button">查看详情</a>
 </div>
 
 ## 导航链接

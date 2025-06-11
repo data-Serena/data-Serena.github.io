@@ -1,0 +1,161 @@
+/* === 基础字体和配色 === */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #222831;
+  background-color: #f9fbfc;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* 容器最大宽度，居中 */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* 链接及按钮 */
+a {
+  color: #1e90ff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover, a:focus {
+  color: #155dba;
+  text-decoration: underline;
+}
+
+/* 标题样式 */
+h1, h2, h3, h4, h5, h6 {
+  color: #222831;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.75rem;
+  letter-spacing: 0.04em;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+/* 段落文字 */
+p {
+  font-size: 1.05rem;
+  margin-bottom: 1.25rem;
+  color: #4b5258;
+}
+
+/* 列表 */
+ul, ol {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+  padding-left: 1.5rem;
+  color: #4b5258;
+}
+
+/* 分割线 */
+hr {
+  border: none;
+  border-top: 1px solid #d1d9e6;
+  margin: 3rem 0;
+}
+
+/* 代码块样式 */
+pre, code {
+  font-family: "Source Code Pro", Consolas, monospace;
+  background-color: #e6ebf1;
+  border-radius: 5px;
+  padding: 0.3em 0.5em;
+  color: #1e1e1e;
+  font-size: 0.95rem;
+}
+
+pre {
+  padding: 1rem;
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+/* 页脚 */
+footer {
+  color: #6b7280;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-top: 1px solid #d1d9e6;
+  margin-top: 4rem;
+}
+
+/* 按钮（如果有） */
+button, .btn {
+  background-color: #1e90ff;
+  border: none;
+  color: white;
+  padding: 0.5em 1.2em;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+button:hover, .btn:hover {
+  background-color: #155dba;
+}
+
+/* === 响应式布局优化 === */
+
+/* 中小屏幕（手机竖屏） */
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  .container {
+    padding: 0 0.75rem;
+  }
+}
+
+/* 更小手机屏幕 */
+@media (max-width: 400px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  p {
+    font-size: 1rem;
+  }
+}
+
+/* 平板及大屏调整 */
+@media (min-width: 901px) {
+  .container {
+    max-width: 1000px;
+  }
+}

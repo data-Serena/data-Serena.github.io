@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 数据分析作品集
+title: 主页
 ---
 
 <h1>欢迎来到我的数据分析作品集</h1>

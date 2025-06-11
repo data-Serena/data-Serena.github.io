@@ -1,3 +1,11 @@
-title: "数据分析作品集"
-description: "一个展示我的数据分析项目、技能和经验的地方。"
-theme: jekyll-theme-cayman
+title: 的数据分析作品集
+description: 专注业务洞察，驱动增长策略的数据分析师作品集
+theme: null  # 关闭默认 Cayman 主题，启用自定义布局
+markdown: kramdown
+permalink: pretty
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: default

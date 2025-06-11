@@ -1,9 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} - {{ site.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ "/assets/css/custom.css" | relative_url }}">
+</head>
+
 <body>
+  <header>
+    <h1>{{ site.title }}</h1>
+    <p>{{ site.description }}</p>
+  </header>
+
   <div class="container">
     <nav>
-      <a href="/">主页</a>
-      <a href="/about">关于我</a>
-      <a href="/contact">联系我</a>
+      <a href="{{ "/" | relative_url }}">主页</a>
+      <a href="{{ "/projects/driver_order_analysis.html" | relative_url }}">司机完单分析</a>
+      <a href="{{ "/projects/driver_retention_analysis.html" | relative_url }}">司机留存分析</a>
+      <a href="{{ "/about.html" | relative_url }}">关于我</a>
+      <a href="{{ "/contact.html" | relative_url }}">联系我</a>
     </nav>
 
     {{ content }}
@@ -13,3 +29,4 @@
     </footer>
   </div>
 </body>
+</html>

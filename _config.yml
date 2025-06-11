@@ -22,3 +22,4 @@ plugins:
   - jekyll-feed
 
 markdown: kramdown
+highlighter: rouge

@@ -237,3 +237,15 @@ table th, table td {
   text-decoration: underline;
 }
 
+/* 优化代码块显示风格 */
+pre code {
+  display: block;
+  background-color: #f5f7fa;
+  border-left: 5px solid #005a9c;
+  padding: 1em;
+  overflow-x: auto;
+  font-size: 14px;
+  line-height: 1.5;
+  border-radius: 8px;
+}
+
